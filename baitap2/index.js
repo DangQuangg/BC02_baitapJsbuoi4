@@ -1,13 +1,21 @@
-// var seLectEl = document.getElementById("seLect").value
-// var giaTri = seLectEl.value;
-var nhanvat="Bố"
+var seLectEl = document.getElementById("seLect")
 
-switch(nhanvat){
+
+function sapXep(){
+var seLectEl =  document.getElementById("seLect").value
+switch(seLectEl){
     case "Bố":
-        console.log("Hello Bo");
+        document.getElementById("Hello").innerHTML=("hello Bố")
     break
     case "Mẹ":
-        console.log("hello me");
+        document.getElementById("Hello").innerHTML=("hello Mẹ")
     break
-    default:console.log("abc");
+    case "Anh":
+        document.getElementById("Hello").innerHTML=("hello Anh Trai")
+    break
+    case "Em":
+        document.getElementById("Hello").innerHTML=("hello Em gái")
+    break
+    default:console.log("Vui lòng chọn");
+}
 }
